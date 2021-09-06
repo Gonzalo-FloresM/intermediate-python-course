@@ -2,9 +2,12 @@ import random
 
 def main():
   
-	dice_rolls = int( input( 'How many dice would you like to roll? ' ) )
+	player_name =  input( 'What is your name?' )
+	dice_rolls = int( input( f'Ok {player_name}, How many dice would you like to roll? ' ) )
 	dice_size = int( input( 'How many sides are the dice? ' ) )
 	dice_sum = 0
+	
+	print(f'this is your move ')
 	for i in range(0,dice_rolls):
 		roll = random.randint(1,dice_size)
 		dice_sum += roll
